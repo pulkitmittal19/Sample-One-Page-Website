@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sample Website</title>
@@ -12,8 +17,9 @@
   <body>
     <!-- Navbar starts -->
     <header class="text-gray-700 body-font">
+      <a id="home"></a>
       <div
-        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+        class="fixed bg-white shadow-md z-50 w-full px-5 py-5 flex justify-between items-center"
       >
         <a
           class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
@@ -37,27 +43,27 @@
         >
           <a
             class="mr-6 text-xl hover:text-gray-800 hover:border-black border-b-2 text-black"
-            href="#"
+            href="#home"
             >Home</a
           >
           <a
             class="mr-6 text-xl border-b-2 hover:text-gray-800 hover:border-black text-black"
-            href="#"
+            href="#aboutSection"
             >About us</a
           >
           <a
             class="mr-6 text-xl border-b-2 hover:text-gray-800 hover:border-black text-black"
-            href="#"
+            href="#ourCourses"
             >Our Courses</a
           >
           <a
             class="mr-6 text-xl border-b-2 hover:text-gray-800 hover:border-black text-black"
-            href="#"
+            href="#ourFaculty"
             >Our Faculty</a
           >
           <a
             class="mr-1 text-xl border-b-2 hover:text-gray-800 hover:border-black text-black"
-            href="#"
+            href="#contact"
             >Contact
           </a>
         </nav>
@@ -151,6 +157,7 @@
 
     <!-- About Section Start -->
     <section class="text-gray-700 body-font">
+      <a id="aboutSection"></a>
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1
@@ -272,6 +279,7 @@
 
     <!-------Courses List start------>
     <section class="text-gray-700 body-font">
+      <a id="ourCourses"></a>
       <div class="container px-5 py-24 mx-auto">
         <h1
           class="sm:text-3xl text-2xl font-medium text-center title-font mb-4 text-gray-900"
@@ -572,6 +580,7 @@
 
     <!---Top Tutors List start------->
     <section class="text-gray-700 body-font">
+      <a id="ourFaculty"></a>
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1 class="text-4xl font-medium title-font mb-4 text-gray-900">
@@ -924,6 +933,7 @@
 
     <!---Contact Us Section start--->
     <section class="text-gray-700 body-font relative">
+      <a id="contact"></a>
       <div class="container px-5 py-24 mx-auto flex sm:flex-no-wrap flex-wrap">
         <div
           class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
